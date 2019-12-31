@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible " content="ie=edge ">
+    <title>final</title>
+
+    <!-- 引用 Bootstrap 的 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- 引用 Google 中文字型 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- 引用 font-awesome ICON 的 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- 引用自己定義的CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+
+<body>
+
+    <nav class="nav navbar fixed-top navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#"><i class="fas fa-lightbulb"></i> 光亮貿易有限公司</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        小型電器
+                      </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./2019-10-08_上課範例/img.html">電扇</a>
+                        <a class="dropdown-item" href="./2019-10-08_上課範例/text.html">電蚊拍</a>
+                        <a class="dropdown-item" href="./2019-10-08_上課範例/table.html">快煮壺</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        燈具
+                      </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./2019-10-08_上課範例/img.html">燈管</a>
+                        <a class="dropdown-item" href="./2019-10-08_上課範例/text.html">燈泡</a>
+                        <a class="dropdown-item" href="./2019-10-08_上課範例/table.html">燈具套組</a>
+                        <a class="dropdown-item" href="./card.html">零件單售</a>
+                    </div>
+                </li>
+            </ul>
+
+            <li class=" top-account ">
+                <a href="https://colorlib.com/tyche/my-account/" class="nav-l"><i class="fa fa-user"></i> Account </a>
+            </li>
+            <li class="top-cart">
+                <a href="https://colorlib.com/tyche/cart/" class="nav-l"><i class="fa fa-shopping-cart"></i> My Cart - $ <span class="price">0</span> </a>
+            </li>
+
+        </div>
+    </nav>
+
+    <!-- 網頁內容 -->
+    <div class="container">
+
+        <!-- 標題 -->
+        <div class="jumbotron">
+            <h1 class="display-4 ">前端程式設計</h1>
+        </div>
+
+        <h1>購物車</h1>
+        <table class="table text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">商品名稱</th>
+                    <th scope="col">售價</th>
+                    <th scope="col">參考圖片</th>
+                    <th scope="col">數量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>加厚連帽外套</td>
+                    <td>790</td>
+                    <td><img class="img1" src="./img/c1.jpg" alt=""></td>
+                    <td><button class="btn btn-secondary"><i class="fas fa-shopping-cart"></i><span></span></button></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- 引用 Bootstrap 的 JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

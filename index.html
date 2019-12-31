@@ -2,426 +2,49 @@
 <html lang="en">
 
 <head>
-    <!-- meta -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>踩地雷</title>
 
-    <title>Folio - Deeumiya's Portfolio </title>
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-
-    <!-- Bootstrap CSS File -->
-    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-    <link href="lib/hover/hover.min.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Responsive css -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.jpg">
-
-    <script src="https://kit.fontawesome.com/95209fac9e.js" crossorigin="anonymous"></script>
-    <!-- =======================================================
-    Theme Name: Folio
-    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 引用 Google 中文字型 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/title.css">
 </head>
 
-<body>
-
-    <!-- start section navbar -->
-    <nav id="main-nav">
+<body onload="run()" onContextMenu="window.event.returnValue=false">
+    <div class=" title">
+        <h1 class="title1"><i class="fas fa-bomb"></i>踩地雷<i class="fas fa-bomb"></i></h1>
         <div class="row">
-            <div class="container">
-
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
-                </div>
-
-                <div class="responsive">
-                    </i><i data-icon="m" class="ion-navicon-round"></i></div>
-
-                <ul class="nav-menu list-unstyled">
-                    <li><a href="#header" class="smoothScroll">Home</a></li>
-                    <li><a href="#about" class="smoothScroll">About</a></li>
-                    <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-                    <li><a href="#journal" class="smoothScroll">Blog</a></li>
-                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-    <!-- End section navbar -->
-
-
-    <!-- start section header -->
-    <div id="header" class="home">
-
-        <div class="container">
-            <div class="header-content">
-                <h1>I'm <span class="typed"></span></h1>
-                <p>energetic,enthusiastic,optimistic</p>
-
-                <ul class="list-unstyled list-social">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                </ul>
-            </div>
+            <div class="col-5"></div>
+            <div class="col-1 title2"><i class="far fa-clock"></i></div>
+            <div id="timer" class="col-1 title2">0分0秒</div>
+            <div class="col-5"></div>
         </div>
     </div>
-    <!-- End section header -->
 
-
-    <!-- start section about us -->
-    <div id="about" class="paddsection">
-        <div class="container">
-            <div class="row justify-content-between">
-
-                <div class="col-lg-4 ">
-                    <div class="div-img-bg">
-                        <div class="about-img">
-                            <img src="images/me.jpg" class="img-responsive" alt="me">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <div class="about-descr">
-
-                        <p class="p-heading">About Me </p>
-                        <p class="separator">I major in Agronomy. So I devote to make the crop grow better. It takes lots of time and experience not just in the field, but also in lab. In my free time, I like to draw some picture and design. Also, I like to cook for my family
-                            and myself. It's more delicious and healthy. No matter what I am doing, I will try my best!</p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div id="mine" class="col-6 center"></div>
+        <div class="col-3"></div>
     </div>
-    <!-- end section about us -->
 
-
-    <!-- start section services -->
-    <div id="services">
-        <div class="container">
-
-            <div class="services-carousel owl-theme">
-
-                <div class="services-block">
-
-                    <i class="fas fa-flask"></i>
-                    <span>CROP IMPROVEMENT</span>
-                    <p class="separator">Using gene-editing skill to create the trait we want. </p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="fas fa-carrot"></i>
-                    <span>CULTIVATE CROP</span>
-                    <p class="separator">Find the best cultivate method to make the crop grow better.</p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="fas fa-book"></i>
-                    <span>COVER DESIGN</span>
-                    <p class="separator">Design a specific cover for own books, magzines, subject.</p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="fas fa-camera"></i>
-                    <span>IMAGE-EDITING</span>
-                    <p class="separator">Make the photo or image looks much better.</p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="fas fa-vihara"></i>
-                    <span>3D MODELING</span>
-                    <p class="separator">Model a character or a place which can put into the game engine or animation.</p>
-
-                </div>
-            </div>
-
-        </div>
-
+    <div class="row title1">
+        <div class="col-5"></div>
+        <div class="col-1 title3 center"><i class="fas fa-bomb"></i></div>
+        <div id="remain" class="col-1 title3 center">0</div>
+        <div class="col-5"></div>
     </div>
-    <!-- end section services -->
-
-
-    <!-- start section portfolio -->
-    <div id="portfolio" class="text-center paddsection">
-
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>My Portfolio</h2>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="portfolio-list">
-
-                        <ul class="nav list-unstyled" id="portfolio-flters">
-                            <li class="filter filter-active" data-filter=".all">all</li>
-                            <li class="filter" data-filter=".branding">illustrator</li>
-                            <li class="filter" data-filter=".mockups">photoshop</li>
-                            <li class="filter" data-filter=".uikits">3ds Max</li>
-                        </ul>
-
-                    </div>
-
-                    <div class="portfolio-container">
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups ">
-                            <a class="popup-img" href="images/portfolio/1.jpg">
-                                <img src="images/portfolio/1.jpg" alt="img">
-                            </a>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups ">
-                            <a class="popup-img" href="images/portfolio/2.jpg">
-                                <img src="images/portfolio/2.jpg" alt="img">
-                            </a>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding ">
-                            <a class="popup-img" href="images/portfolio/3.jpg">
-                                <img src="images/portfolio/3.jpg" alt="img">
-                            </a>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all uikits ">
-                            <a class="popup-img" href="images/portfolio/4.jpg">
-                                <img src="images/portfolio/4.jpg" alt="img">
-                            </a>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all uikits ">
-                            <a class="popup-img" href="images/portfolio/5.jpg">
-                                <img src="images/portfolio/5.jpg" alt="img">
-                            </a>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding ">
-                            <a class="popup-img" href="images/portfolio/6.jpg">
-                                <img src="images/portfolio/6.jpg" alt="img">
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="center">
+        <button id="btn"> 再玩一次</button>
     </div>
-    <!-- End section portfolio -->
 
-
-    <!-- start section journal -->
-    <div id="journal" class="text-left paddsection">
-
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>journal</h2>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="journal-block">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="journal-info">
-
-                            <a href="./blog1.html"><img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
-
-                            <div class="journal-txt">
-
-                                <h4><a href="./blog1.html">Make the crop grow better</a></h4>
-                                <p class="separator">Find the best cultivate method to make the crop grow better.
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="journal-info">
-
-                            <a href="./blog2.html"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
-
-                            <div class="journal-txt">
-
-                                <h4><a href="./blog2.html">Improve the crop trait</a></h4>
-                                <p class="separator">Using gene-editing skill to create the trait we want.
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="journal-info">
-
-                            <a href="./blog3.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
-
-                            <div class="journal-txt">
-
-                                <h4><a href="./blog3.html">Brighten the daily life</a></h4>
-                                <p class="separator">Drawing and design makes my day colorful. It's not just interest, but also life.
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- End section journal -->
-
-
-    <!-- start sectoion contact -->
-    <div id="contact" class="paddsection">
-        <div class="container">
-            <div class="contact-block1">
-                <div class="row">
-
-                    <div class="col-lg-6">
-                        <div class="contact-contact">
-
-                            <h2 class="mb-30">GET IN TOUCH</h2>
-
-                            <ul class="contact-details">
-                                <li><span>Taichung, Taiwan</span></li>
-                                <li><span>+886 905719511</span></li>
-                                <li><span>b05601012@ntu.edu.tw</span></li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <form action="" method="post" role="form" class="contactForm">
-                            <div class="row">
-
-                                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                                <div id="errormessage"></div>
-
-                                <div class="col-lg-6">
-                                    <div class="form-group contact-block1">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- start sectoion contact -->
-
-
-    <!-- start section footer -->
-    <div id="footer" class="text-center">
-        <div class="container">
-            <div class="socials-media text-center">
-
-                <ul class="list-unstyled">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                </ul>
-
-            </div>
-
-            <p>&copy; Copyrights Folio. All rights reserved.</p>
-
-            <div class="credits">
-                <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-        -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-
-        </div>
-    </div>
-    <!-- End section footer -->
-
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/mine.js"></script>
 </body>
 
 </html>
